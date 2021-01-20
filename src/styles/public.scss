@@ -1,0 +1,496 @@
+.container {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  .actions_part {
+    width: 100%;
+    margin: 10px 0;
+    .actions_wrap {
+      display: block;
+    }
+    .tag {
+      font-size: 14px;
+      color: #303133;
+    }
+    .actions_btn_wrap {
+      display: block;
+      width: 100%;
+    }
+  }
+  .edit_part {
+    // 编辑
+    .tag {
+      font-size: 14px;
+      color: #303133;
+    }
+  }
+  .upload_wrap {
+    &>div {
+      max-width: 40%;
+    }
+    .upload_tit {
+      margin: 0;
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .empty_tip {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 14px;
+    color: #909399;
+  }
+}
+
+// 一级导航
+.nav_tab_wrap {
+  width: 100%;
+  .el-tabs--border-card {
+    background: #ebeff2;
+    border: none;
+    box-shadow: none;
+    &>.el-tabs__header {
+      height: 20px;
+      background-color: #FFFFFF;
+      margin-bottom: 10px;
+      padding: 20px 0px;
+      line-height: 20px;
+      border-radius: 6px;
+      border: none;
+      overflow: hidden;
+      .el-tabs__item {
+        border: none;
+        border-right: 1px solid #DCDFE6;
+        &:last-child {
+          border-right: none;
+        }
+        &.is-active {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .el-tabs__item {
+    height: 15px;
+    line-height: 15px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+// 公共表格
+.el-table {
+  th {
+    &.gutter {
+      display: table-cell!important;
+    }
+  }
+  colgroup {
+    &.gutter {
+      display: table-cell!important;
+    }
+  }
+}
+//双重组件展开(划过)
+.el-table tr {
+  cursor: pointer;
+}
+
+// 编辑表格组件
+.editTable, .tableList .childTable {
+  &.el-table {
+    // 表头样式
+    .el-table__header-wrapper {
+      .el-table__header {
+        width: 100% !important;
+        min-width: 100% !important;
+        thead {
+          tr {
+            th {
+              background-color: #f8f8f9;
+              color: #606266;
+              &.is-hidden {
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .el-table__fixed, .el-table__fixed-right {
+      .el-table__fixed-header-wrapper {
+        .el-table__header {
+          thead {
+            tr {
+              th {
+                background-color: #f8f8f9;
+                color: #606266;
+              }
+            }
+          }
+        }
+      }
+      .el-table__fixed-body-wrapper {
+        min-height: 60px;
+        background-color: #fff;
+      }
+    }
+    .el-table__body-wrapper {
+      .el-table__body {
+        min-width: 100% !important;
+        td {
+          &.is-hidden {
+            border-right: none;
+          }
+        }
+      }
+    }
+    // 暂无数据
+    // .el-table__empty-block {
+    //   width: 100% !important;
+    //   // min-width: 100% !important;
+    // }
+    .input_single {
+      &.danger {
+        .el-input__inner {
+          border-color: red !important;
+        }
+      }
+    }
+  }
+
+  .meters {
+    max-width: 150px;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    vertical-align: top;
+    .count {
+      max-width: 130px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// 单重数据列表表格
+.singleTableList {
+  &.el-table {
+    td, th {
+      // padding: 15px 0;
+    }
+    .el-table__header {
+      width: 100% !important;
+      tr {
+        th {
+          &:first-of-type {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+          }
+          &:last-of-type {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+          &.is-leaf {
+            background-color: #f8f8f9;
+            color: #606266;
+          }
+        }
+      }
+    }
+    .el-table__body {
+      width: 100% !important;
+      .cell {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .el-table__fixed, .el-table__fixed-right {
+      .el-table__fixed-body-wrapper {
+        min-height: 60px;
+        background-color: #fff;
+      }
+    }
+    // 暂无数据
+    // .el-table__empty-block {
+    //   width: 100% !important;
+    // }
+  }
+}
+
+// 列表
+.table_part {
+  position: relative;
+  // 组件列表
+  .allparentlist {
+    .parentlist {
+      background-color: #F0F2F3;
+    }
+    .childlist {
+      width: 98%;
+      margin-left: 2%;
+      margin-top: 8px;
+      background-color: #E1E6EA;
+    }
+    .childcontentlist {
+      width: 98%;
+      margin-left: 2%;
+    }
+  }
+  .parent_header_wrap {
+    background-color: #486889 !important;
+    .el-checkbox {
+      width: auto;
+    }
+    li {
+      padding: 12px 10px !important;
+      color: #fff !important;
+    }
+  }
+  ul {
+    li {
+      outline: none;
+    }
+    &.childcontentlist {
+      background-color: #F0F2F3;
+      border-bottom: 1px solid #fff !important;
+      &:hover {
+        background-color: #f5f7fa;
+      }
+    }
+  }
+  // 组件列表 end
+  .pagination_wrap {
+    height: 30px;
+    margin-top: 20px;
+  }
+  .img_pay {
+    // width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  // 二级Tab
+  .subnav_wrap {
+    &.el-tabs--top {
+      .el-tabs__item {
+        &.is-top:nth-child(2) {
+          padding-left: 0;
+        }
+      }
+    }
+    ul {
+      &.el-dropdown-menu {
+        li {
+          &.el-dropdown-menu__item {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    .el-tabs__item {
+      height: 40px !important;
+      line-height: 40px !important;
+      font-size: 14px !important;
+      vertical-align: baseline !important;
+    }
+    .el-tabs__content {
+      overflow: visible;
+    }
+    .checkbox_list {
+      .el-checkbox__label {
+        width: 100%;
+        padding-left: 0;
+        color: #606266;
+      }
+      .el-checkbox {
+        width: 100%;
+      }
+      .el-checkbox__input {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // .el-tabs {
+  //   .el-tabs__content {
+  //     min-height: 536px;
+  //   }
+  // }
+
+  // popover
+  .popover_wrap {
+    .el-popover__reference {
+      padding: 5px;
+      background: none;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #409EFF;
+    }
+  }
+}
+
+// Table组件列表
+.table_list {
+  &.double {
+    &.el-table {
+      .el-table__body-wrapper {
+        .el-table__expanded-cell {
+          &>div {
+            &:first-of-type {
+              .el-table__header-wrapper {
+                display: block !important;
+              }
+            }
+          }
+          .el-table__header-wrapper {
+            display: none;
+          }
+        }
+      }
+    }
+    &.excel {
+      &.el-table {
+        .el-table__body-wrapper {
+          .el-table__expanded-cell {
+            &>div {
+              &:nth-child(2) {
+                .el-table__header-wrapper {
+                  display: block !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.el-table {
+    td, th {
+      padding: 20px 0;
+      &.is-left {
+        text-align: left;
+      }
+    }
+    .el-table__fixed-header-wrapper {
+      th {
+        padding: 15px 0;
+      }
+    }
+    .el-table__header-wrapper {
+      th {
+        padding: 15px 0;
+      }
+    }
+    td {
+      &.el-table__expanded-cell {
+        background-color: #f8f8f9;
+        padding: 20px 50px;
+        &:hover {
+          background-color: #f8f8f9 !important;
+        }
+      }
+      .el-table {
+        border-radius: 4px;
+        box-shadow: 0 1px 5px #ddd;
+      }
+    }
+    th {
+      background-color: #f8f8f9;
+    }
+  }
+}
+
+.table_block {
+  // background-color: #f8f8f9;
+  padding: 20px;
+  box-shadow: 0 1px 5px #ddd;
+}
+
+// 弹窗
+.popup_part {
+  ul {
+    &.childcontentlist {
+      height: 60px;
+      line-height: 40px;
+    }
+  }
+}
+
+// 远程搜索输入框下拉列表
+.el-autocomplete-suggestion {
+  .el-scrollbar__wrap {
+    .el-autocomplete-suggestion__list {
+      li {
+        box-sizing: border-box !important;
+      }
+    }
+  }
+}
+
+// 媒体查询
+// @media screen and (max-width:1920px) {
+//   .container {
+//     .actions_part {
+//       .actions_wrap {
+//         max-width: 1300px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1600px) {
+//   .container {
+//     .actions_part {
+//       .actions_wrap {
+//         max-width: 1100px;
+//       }
+//     }
+//   }
+// }
+
+.sidebar-container {
+    .wrap {
+      overflow-y: auto;
+    }
+  }
+@media screen and (max-width: 1536px) {
+  // .container {
+  //   .actions_part {
+  //     .actions_wrap {
+  //       max-width: 1000px;
+  //     }
+  //   }
+  // }
+
+  // 左侧菜单栏
+  // .sidebar-container {
+  //   .wrap {
+  //     max-height: 834px;
+  //     overflow-y: auto;
+  //   }
+  // }
+}
+
+// @media screen and (max-width: 1366px) {
+//   .container {
+//     .actions_part {
+//       .actions_wrap {
+//         max-width:900px;
+//       }
+//     }
+//   }
+// }

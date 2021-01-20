@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'rake'
+gem 'thor'
+gem 'pry-byebug'
+gem 'dockerkit'
+gem 'parse-stack'
+gem 'activesupport'

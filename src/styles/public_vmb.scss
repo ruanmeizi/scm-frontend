@@ -1,0 +1,364 @@
+.sidebar-container {
+  background-color: #377D66 !important;
+  .el-menu {
+    background-color: #377D66 !important;
+    .el-menu-item {
+      background-color: #377D66 !important;
+      &.is-active {
+        color: #5FE3B8 !important;
+        border-color: #5FE3B8 !important;
+      }
+      &:hover {
+        background-color: #1B4739 !important;
+      }
+    }
+    .el-submenu__title {
+      background-color: #377D66 !important;
+      &:hover {
+        background-color: #1B4739 !important;
+      }
+    }
+    .el-submenu {
+      background-color: #377D66 !important;
+    }
+  }
+}
+
+.main-container {
+  .navbar {
+    .el-icon-s-grid {
+      color: #45856F !important;
+    }
+  }
+}
+
+.homecontent {
+  ul {
+    &.nav {
+      li {
+        &:nth-child(1) {
+          background-color: #6E9F8F !important;
+        }
+        &:nth-child(2) {
+          background-color: #45856F !important;
+        }
+        &:nth-child(3) {
+          background-color: #3C6E5E !important;
+        }
+        &:nth-child(4) {
+          background-color: #1B4739 !important;
+        }
+        
+      }
+    }
+  }
+}
+
+.app-main {
+  .commontitle {
+    ul {
+      li {
+        &.is-active {
+          color: #377D66 !important;
+        }
+        // &:first-child {
+        //   color: #5FE3B8 !important;
+        // }
+      }
+    }
+  }
+}
+
+.el-tabs--border-card {
+  &>.el-tabs__header {
+    .el-tabs__item {
+      &:not(.is-disabled) {
+        &:hover {
+          color: #377D66 !important;
+        }
+      }
+      &.is-active {
+        color: #377D66 !important;
+      }
+    }
+  }
+}
+
+
+// 登录
+.el-dropdown-menu__item {
+  &:focus {
+    color: #377D66 !important;
+  }
+  &:not(.is-disabled) {
+    &:hover {
+      color: #377D66 !important;
+    }
+  }
+}
+
+// 申请采购
+.commontitle {
+  ul {
+    li {
+      &:first-child {
+        color: #377D66 !important;
+      }
+    }
+  }
+}
+// 产品库存规则
+.table_part {
+  .formula_wrap {
+    li {
+      &.blue {
+        color: #377D66 !important;
+      }
+    }
+  }
+}
+// 查询 列表下划线
+.underline {
+  border-color: #377D66 !important;
+}
+
+// 二级Tab
+.el-tabs__item {
+  &:hover {
+    color: #377D66 !important;
+  }
+  &.is-active {
+    color: #377D66 !important;
+  }
+}
+
+.el-tabs__active-bar {
+  background-color: #377D66 !important;
+}
+
+// 列表 双重
+// popover
+.tableList {
+  .btn_popover {
+    border-color: #377D66 !important;
+  }
+}
+
+// icon
+.el-icon-edit,
+.el-icon-thumb,
+.el-icon-delete,
+.el-icon-document,
+.el-icon-close,
+.el-icon-circle-plus-outline,
+.el-icon-circle-plus,
+.el-icon-back {
+  color: #377D66 !important;
+}
+
+.el-icon-refresh-right {
+  // color: #377D66 !important;
+}
+
+// select
+.el-select {
+  .el-input.is-focus {
+    .el-input__inner {
+      border-color: #377D66 !important;
+    }
+  }
+  .el-input__inner {
+    &:focus {
+      border-color: #377D66 !important;
+    }
+  }
+}
+.el-select-dropdown__item {
+  &.selected {
+    color: #377D66 !important;
+  }
+}
+
+// input
+.el-input {
+  &.is-active {
+    .el-input__inner {
+      border-color: #377D66 !important;
+    }
+  }
+}
+.el-input__inner {
+  &:focus {
+    border-color: #377D66 !important;
+  }
+  &:hover {
+    border-color: #377D66 !important;
+  }
+}
+
+// textarea
+.el-textarea__inner {
+  &:focus {
+    border-color: #377D66 !important;
+  }
+}
+
+// 计数器
+.el-input-number__decrease {
+  &:hover {
+    color: #377D66 !important;
+    &:not(.is-disabled) {
+      &~.el-input {
+        .el-input__inner {
+          &:not(.is-disabled) {
+            border-color: #377D66 !important;
+          }
+        }
+      }
+    }
+  }
+}
+.el-input-number__increase {
+  &:hover {
+    color: #377D66 !important;
+    &:not(.is-disabled) {
+      &~.el-input {
+        .el-input__inner {
+          &:not(.is-disabled) {
+            border-color: #377D66 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// checkbox
+.el-checkbox__input {
+  &.is-checked {
+    .el-checkbox__inner {
+      background-color: #377D66 !important;
+      border-color: #377D66 !important;
+    }
+  }
+  &.is-indeterminate {
+    .el-checkbox__inner {
+      background-color: #377D66 !important;
+      border-color: #377D66 !important;
+    }
+  }
+}
+.el-checkbox__inner {
+  &:hover {
+    border-color: #377D66 !important;
+  }
+}
+
+// datePicker
+.el-date-table {
+  td {
+    &.today {
+      span {
+        color: #377D66 !important;
+      }
+    }
+    &.start-date {
+      span {
+        background-color: #377D66 !important;
+      }
+    }
+    &.end-date {
+      span {
+        background-color: #377D66 !important;
+      }
+    }
+    &.available {
+      &:hover {
+        color: #377D66 !important;
+      }
+    }
+  }
+}
+
+// popover
+.el-popover__reference {
+  border-color: #377D66 !important;
+}
+
+// button
+.el-button {
+  &:active {
+    background-color: #fff !important;
+    border-color: #377D66 !important;
+    color: #377D66 !important;
+  }
+  &:hover {
+    background-color: #fff !important;
+    border-color: #377D66 !important;
+    color: #377D66 !important;
+  }
+}
+.el-button--text {
+  color: #377D66 !important;
+}
+.el-button--primary {
+  background-color: #377D66 !important;
+  border-color: #377D66 !important;
+  &.is-disabled {
+    background-color: #377D66 !important;
+    border-color: #377D66 !important;
+    color: #FFF;
+    opacity: .5;
+    &:active {
+      color: #FFF !important;
+    }
+    &:focus {
+      color: #FFF !important;
+    }
+    &:hover {
+      color: #FFF !important;
+    }
+  }
+}
+
+// table button
+// table {
+//   td {
+//     button {
+//       background-color: #377D66 !important;
+//     }
+//   }
+// }
+
+// 分页
+.el-pager {
+  li {
+    &.active {
+      color: #377D66 !important;
+    }
+    &:hover {
+      color: #377D66 !important;
+    }
+  }
+}
+.el-pagination {
+  button {
+    &:hover {
+      color: #377D66 !important;
+    }
+  }
+}
+
+// 上传图片
+.el-upload--picture-card {
+  &:hover {
+    border-color: #377D66 !important;
+    color: #377D66 !important;
+  }
+}
+.el-upload {
+  &:focus {
+    border-color: #377D66 !important;
+    color: #377D66 !important;
+  }
+}

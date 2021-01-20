@@ -1,0 +1,4 @@
+FROM registry.cn-beijing.aliyuncs.com/vitalitytexpub/node-base:0.1
+WORKDIR /usr/src/app
+ADD package.json /usr/src/app/package.json
+RUN cnpm install

@@ -1,0 +1,8 @@
+require 'active_support'
+require 'base64'
+require './docker/tasks/helper.rb'
+import 'docker/tasks/docker.rake'
+import 'docker/tasks/db.rake'
+import 'docker/tasks/node.rake'
+import 'docker/tasks/git.rake'
+require 'json'

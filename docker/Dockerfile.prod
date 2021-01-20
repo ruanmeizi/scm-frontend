@@ -1,0 +1,8 @@
+FROM registry.cn-beijing.aliyuncs.com/vitalitytex/scm-frontend:base as builder
+ADD ./ /usr/src/app
+RUN cnpm install --registry=http://192.168.36.6:7001&&cnpm run prod
+
+FROM nginx:1.8-alpine
+MAINTAINER shaoyang
+COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
+ADD ./docker/nginx.conf /etc/nginx/nginx.conf

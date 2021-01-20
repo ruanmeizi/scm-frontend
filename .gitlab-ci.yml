@@ -1,0 +1,32 @@
+stages:
+  - build
+  - deploy-staging
+  - deploy-prod
+
+compile:
+  stage: build
+  script:
+    - npm install
+    - npm run alpha
+  cache:
+    key: node-module-cache
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: 5min
+    paths:
+      - dist
+  only:
+    - tags
+  except:
+    - master
+
+deploy:
+  stage: deploy-staging
+  script:
+    - cd dist
+    - cp -rf * /www
+  only:
+    - tags
+  except:
+    - master

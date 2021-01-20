@@ -1,0 +1,92 @@
+.main-container {
+  .tool {
+    padding-top: 12px;
+
+    .el-form-item {
+      margin-bottom: 12px;
+      margin-right: 10px !important;
+
+      .el-select,
+      .el-cascader {
+        width: 150px;
+      }
+    }
+
+    .el-form-item__label {
+      font-size: 12px;
+    }
+
+    .el-col {
+      .table-filter-tools {
+        float: right;
+        margin-bottom: 12px;
+
+        .table-filter-tools-item {
+          i {
+            font-size: 24px;
+            vertical-align: middle;
+            color: #51b8e1;
+            margin-right: 5px;
+          }
+
+          font-size: 12px;
+          color: #606266;
+          float: left;
+          cursor: pointer;
+          line-height: 33px;
+
+          margin-left: 16px;
+
+          &:hover {
+            color: #409eff;
+          }
+        }
+      }
+    }
+  }
+
+  .sc-table {
+    .el-table__header-wrapper {
+      thead {
+        th {
+          background: #f9fafc;
+          color: #3b3b3c;
+          padding: 20px 0;
+        }
+      }
+    }
+
+    .el-table {
+      font-size: 12px;
+      border-radius: 4px;
+
+      .el-tooltip.iconfont {
+        font-size: 20px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .el-table td {
+      border: none;
+    }
+
+    .el-table--border::after,
+    .el-table--group::after,
+    .el-table::before {
+      background-color: #fff;
+    }
+
+    .el-table,
+    .el-table__expanded-cell {
+      background-color: #fff;
+    }
+
+    .el-pagination {
+      text-align: right;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+  }
+}

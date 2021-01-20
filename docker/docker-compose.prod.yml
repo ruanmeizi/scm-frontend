@@ -1,0 +1,7 @@
+version: "2.1"
+services:
+  scm-frontend:
+    image:  registry.cn-beijing.aliyuncs.com/vitalitytex/scm-frontend:prod
+#    image:  scm-frontend
+    ports:
+    - "80:80"

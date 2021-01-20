@@ -1,0 +1,19 @@
+{
+  "base_name": "registry.cn-beijing.aliyuncs.com/vitalitypubtex/none",
+  "author": "liming",
+  "docker_repo": "registry.cn-beijing.aliyuncs.com/vitalitytex",
+  "service_name":"scm-frontend",
+  "image_name": "scm-frontend",
+  "debug_yml": "docker/docker-compose.yml",
+  "prod_yml": "docker/docker-compose.prod.yml",
+  "docker_file": "docker/Dockerfile",
+  "docker_base_file": "docker/Dockerfile.base",
+  "docker_parse": "docker/.docker_parse.json",
+  "test_command": "echo FAKE passed",
+  "dev_command": "npm start",
+  "debug_command": "tail -f /dev/null",
+  "lint_command": "npm run lint",
+  "shell_command": "/bin/bash",
+  "package_command": "echo no package",
+  "db_type": "postgres"
+}
